@@ -1,0 +1,93 @@
+.button {
+  border-radius: 4px;
+}
+
+/* ---sizes--- */
+
+.size-small {
+  padding-inline: 16px;
+  padding-block: 8px;
+}
+
+.size-large {
+  padding-inline: 20px;
+  padding-block: 12px;
+}
+
+/* ---primary--- */
+
+.type-primary {
+    background-color: var(--purple-blue);
+    border: none;
+    color: var(--true-white);
+}
+
+.type-primary:hover {
+    background-color: var(--purple-dark);
+    border: none;
+}
+
+.type-primary:disabled {
+    background-color: var(--grey-400);
+    border: 1px solid var(--grey-400);
+}
+
+.type-primary-destructive {
+    background-color: var(--red);
+}
+
+/* ---secondary--- */
+
+.type-secondary {
+    border: 1px solid var(--purple-blue);
+    color: var(--purple-blue);
+    background-color: var(--true-white);
+}
+
+.type-secondary:hover {
+    border: 1px solid var(--purple-dark);
+    background-color: var(--purple-extra--light);
+}
+
+.type-secondary:disabled {
+    border: 1px solid var(--grey-400);
+    color: var(--grey-400);
+}
+
+.type-secondary-destructive {
+    border: 1px solid var(--red);
+    color: var(--red);
+    background-color: var(--true-white);
+}
+
+/* ---tertiary--- */
+
+.type-tertiary {
+    color: var(--purple-blue);
+    border: none;
+    background-color: var(--true-white);
+}
+
+.type-tertiary:hover {
+    color: var(--purple-dark);
+    background-color: var(--purple-white);
+    border: none;
+}
+
+.type-tertiary:disabled {
+    color: var(--grey-400);
+    border: none;
+    background-color: var(--true-white);
+}
+
+.type-tertiary-destructive {
+    color: var(--red);
+    border: none;
+}
+
+/* ---icon-only--- */
+
+.icon-only {
+    padding-inline: 15px;
+    padding-block: 15px;
+}
