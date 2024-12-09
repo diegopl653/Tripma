@@ -1,8 +1,6 @@
-import { computed, NgModule, OnInit, Signal } from '@angular/core';
+import { computed, Component, OnInit,Input } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { CommonModule } from '@angular/common';
-import { Component, input, Input, signal } from '@angular/core';
-
 @Component({
   selector: 'app-button',
   imports: [CommonModule, NgClass],
@@ -12,12 +10,12 @@ import { Component, input, Input, signal } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() type: 'primary' | 'secondary' | 'tertiary' = 'primary';
   @Input() size: 'small' | 'large' = 'large';
-  @Input() disabled: boolean = false;
-  @Input() iconOnly: boolean = false;
-  @Input() icon: string = '';
-  @Input() destructive: boolean = false;
-  @Input() onClick: () => void = () => {};
-  @Input() texto: string = '';
+  @Input() disabled = false;
+  @Input() iconOnly = false;
+  @Input() icon = '';
+  @Input() destructive = false;
+  @Input() onClick!: () => void;
+  @Input() texto = '';
 
   buttonClasses = computed(() => ({
     button: true,

@@ -1,7 +1,6 @@
-import { Component, Input, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
-import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
