@@ -9,12 +9,12 @@ import { Component, input, Input, signal } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
 })
-export class ButtonComponent {
-  @Input() type: string = 'primary';
+export class ButtonComponent implements OnInit {
+  @Input() type: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  @Input() size: 'small' | 'large' = 'large';
   @Input() disabled: boolean = false;
   @Input() iconOnly: boolean = false;
   @Input() icon: string = '';
-  @Input() size: string = 'large';
   @Input() destructive: boolean = false;
   @Input() onClick: () => void = () => {};
   @Input() texto: string = '';
@@ -30,10 +30,9 @@ export class ButtonComponent {
     'type-tertiary': this.type === 'tertiary' && !this.destructive,
     'type-tertiary-destructive': this.type === 'tertiary' && this.destructive,
     'icon-only': this.iconOnly,
-  }
-));
+  }));
 
   ngOnInit() {
-    console.log('buttonClasses', this.buttonClasses());
+    console.log('detalles del componente', this.buttonClasses());
   }
 }

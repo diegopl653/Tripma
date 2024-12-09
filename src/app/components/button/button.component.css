@@ -20,6 +20,7 @@
     background-color: var(--purple-blue);
     border: none;
     color: var(--true-white);
+    cursor: pointer;
 }
 
 .type-primary:hover {
@@ -34,6 +35,7 @@
 
 .type-primary-destructive {
     background-color: var(--red);
+    cursor: pointer;
 }
 
 /* ---secondary--- */
@@ -42,6 +44,7 @@
     border: 1px solid var(--purple-blue);
     color: var(--purple-blue);
     background-color: var(--true-white);
+    cursor: pointer;
 }
 
 .type-secondary:hover {
@@ -52,12 +55,14 @@
 .type-secondary:disabled {
     border: 1px solid var(--grey-400);
     color: var(--grey-400);
+    cursor: not-allowed;
 }
 
 .type-secondary-destructive {
     border: 1px solid var(--red);
     color: var(--red);
     background-color: var(--true-white);
+    cursor: pointer;
 }
 
 /* ---tertiary--- */
@@ -66,6 +71,7 @@
     color: var(--purple-blue);
     border: none;
     background-color: var(--true-white);
+    cursor: pointer;
 }
 
 .type-tertiary:hover {
@@ -78,11 +84,13 @@
     color: var(--grey-400);
     border: none;
     background-color: var(--true-white);
+    cursor: not-allowed;
 }
 
 .type-tertiary-destructive {
     color: var(--red);
     border: none;
+    cursor: pointer;
 }
 
 /* ---icon-only--- */
