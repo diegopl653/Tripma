@@ -1,21 +1,3 @@
-<!-- <button [ngClass]="getButtonClass()" (click)="onClick()">
+<button [ngClass]="buttonClasses()" [disabled]="disabled">
   {{ texto }}
-</button> -->
-
-<button
-  [ngClass]="{
-    button: true,
-    'size-small': size === 'small',
-    'size-large': size === 'large',
-    'type-primary': type === 'primary' && !destructive,
-    'type-primary-destructive': type === 'primary' && destructive,
-    'type-secondary': type === 'secondary' && !destructive,
-    'type-secondary-destructive': type === 'secondary' && destructive,
-    'type-tertiary': type === 'tertiary' && !destructive,
-    'type-tertiary-destructive': type === 'tertiary' && destructive,
-    'icon-only': iconOnly
-  }"
-  [disabled]="disabled"
->
-  {{texto}}
 </button>
