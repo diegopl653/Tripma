@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /* Color styles */
+    --true-white: #ffffff;
+    --purple-dark: #1513a0;
+    --purple-blue: #605dec;
+    --purple-light: #bcbaf7;
+    --purple-extra--light: #e9e8fc;
+    --purple-white: #f6f6fe;
+    --blue: #407aea;
+    --turquoise: #5cd6c0;
+    --red: #eb5757;
+    --grey-2: #52527a;
+    --red-light: #fdefef;
+    --purple-white--light: #fafafe;
+    --deep-green: #007b65;
+    --grey-900: #27273f;
+    --grey-800: #36374a;
+    --grey-700: #52556f;
+    --grey-600: #6e7491;
+    --grey-500: #657491;
+    --grey-400: #7c8db0;
+    --grey-300: #a1b0cc;
+    --grey-200: #cbd4e6;
+    --grey-100: #fafafa;
+  
+    /* Text-size styles */
+    --body-large: 18px;
+    --body-default: 16px;
+    --body-small: 14px;
+    --body-extra-small: 12px;
+    --footer-header: 18px;
+    --header-h1: 36px;
+    --header-h2: 32px;
+    --header-h3: 24px;
+    --header-h4: 18px;
+    --header-h5: 16px;
+    --header-h6: 14px;
+    --body-extra-large: 24px;
+  
+    /* Effect styles */
+    --background-blur: ;
+    --elevation-medium: 0px 12px 24px rgba(27, 59, 119, 0.05),
+      0px 24px 60px rgba(6, 47, 125, 0.05), 0px 2px 4px rgba(7, 4, 146, 0.1);
+    --elevation-light: 0px 12px 32px rgba(0, 0, 0, 0.05),
+      0px 2px 4px rgba(28, 5, 77, 0.1);
+    --elevation-ultralight: 0px 12px 8px rgba(0, 0, 0, 0.02),
+      0px 2px 2px rgba(28, 5, 77, 0.05);
+  }
+  
