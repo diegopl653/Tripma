@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonComponent } from '@components/button/button.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,7 @@ export class AppComponent {
   };
 
   decrementar = () => {
-    if(this.count() === 0) {
+    if (this.count() === 0) {
       return;
     }
     this.count.set(this.count() - 1);
